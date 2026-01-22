@@ -1,0 +1,10 @@
+RealWaste root: D:\13_Project_Code\Project_CV_github\Multi_Mode_forCV_WHIT\4_Baseline_Tarshnet_resnet18\ablation_study_data/realwaste_small
+Evaluated classes (order): ['cardboard', 'glass', 'metal', 'paper', 'plastic']
+Samples: 3092
+ACC: 0.3393
+mAP: 0.3227
+AP[cardboard]: 0.3353
+AP[glass]: 0.2029
+AP[metal]: 0.3496
+AP[paper]: 0.3061
+AP[plastic]: 0.4194

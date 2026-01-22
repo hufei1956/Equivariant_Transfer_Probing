@@ -1,0 +1,162 @@
+(p310torch27) hufei@PUERSAI-HPC:~/projects/escnn_resnet_wasteclass$ /home/hufei/miniconda3/envs/p310torch27/bin/python /home/hufei/projects/escnn_resnet_wasteclass/escnn_train_v3_so2.py
+np id: 138394210258912
+numpy id: 138394210258912
+np.ndarray is numpy.ndarray: True
+======================================================================
+ESCNN 等变网络训练 (改进版 v3)
+======================================================================
+数据集: trashnet -> trashnet
+类别: ['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
+训练/验证/测试: 1766/377/384
+对称群: SO2
+基础通道数: 16
+学习率调度: cosine
+======================================================================
+设备: cuda
+构建等变网络: SO2 (全方向旋转对称)
+  gspace: SO(2)_on_R2[(None, -1)]
+  base_channels: 16
+
+模型参数量: 3,961,286 (3.96M)
+可训练参数: 3,961,286 (3.96M)
+======================================================================
+Epoch 001 | loss=2.3533 acc=0.2735 | val_acc=0.3263 val_mAP=0.3541 | lr=0.004999
+  -> 保存最佳模型 (val_mAP=0.3541)
+Epoch 002 | loss=1.8629 acc=0.3732 | val_acc=0.2997 val_mAP=0.3845 | lr=0.004995
+  -> 保存最佳模型 (val_mAP=0.3845)
+Epoch 003 | loss=1.7792 acc=0.3726 | val_acc=0.3501 val_mAP=0.4431 | lr=0.004989
+  -> 保存最佳模型 (val_mAP=0.4431)
+Epoch 004 | loss=1.5656 acc=0.4111 | val_acc=0.5093 val_mAP=0.4855 | lr=0.004980
+  -> 保存最佳模型 (val_mAP=0.4855)
+Epoch 005 | loss=1.6586 acc=0.3800 | val_acc=0.3342 val_mAP=0.4349 | lr=0.004969
+Epoch 006 | loss=1.4775 acc=0.4383 | val_acc=0.2202 val_mAP=0.2919 | lr=0.004956
+Epoch 007 | loss=1.4853 acc=0.4490 | val_acc=0.3873 val_mAP=0.4032 | lr=0.004940
+Epoch 008 | loss=1.4173 acc=0.4723 | val_acc=0.4854 val_mAP=0.4716 | lr=0.004921
+Epoch 009 | loss=1.3355 acc=0.5079 | val_acc=0.4297 val_mAP=0.4664 | lr=0.004901
+Epoch 010 | loss=1.3929 acc=0.4819 | val_acc=0.3369 val_mAP=0.3325 | lr=0.004878
+Epoch 011 | loss=1.2908 acc=0.5108 | val_acc=0.4615 val_mAP=0.4208 | lr=0.004852
+Epoch 012 | loss=1.3127 acc=0.4972 | val_acc=0.4350 val_mAP=0.4789 | lr=0.004824
+Epoch 013 | loss=1.2250 acc=0.5283 | val_acc=0.4191 val_mAP=0.4307 | lr=0.004794
+Epoch 014 | loss=1.2072 acc=0.5391 | val_acc=0.4775 val_mAP=0.5184 | lr=0.004762
+  -> 保存最佳模型 (val_mAP=0.5184)
+Epoch 015 | loss=1.2100 acc=0.5447 | val_acc=0.5491 val_mAP=0.5851 | lr=0.004728
+  -> 保存最佳模型 (val_mAP=0.5851)
+Epoch 016 | loss=1.2058 acc=0.5498 | val_acc=0.5756 val_mAP=0.5623 | lr=0.004691
+Epoch 017 | loss=1.1896 acc=0.5555 | val_acc=0.5013 val_mAP=0.5092 | lr=0.004652
+Epoch 018 | loss=1.1417 acc=0.5668 | val_acc=0.5517 val_mAP=0.6017 | lr=0.004611
+  -> 保存最佳模型 (val_mAP=0.6017)
+Epoch 019 | loss=1.1088 acc=0.5912 | val_acc=0.4509 val_mAP=0.5055 | lr=0.004568
+Epoch 020 | loss=1.0919 acc=0.5923 | val_acc=0.5729 val_mAP=0.5750 | lr=0.004523
+Epoch 021 | loss=1.0785 acc=0.5889 | val_acc=0.5358 val_mAP=0.5498 | lr=0.004475
+Epoch 022 | loss=1.0330 acc=0.6166 | val_acc=0.5623 val_mAP=0.5667 | lr=0.004426
+Epoch 023 | loss=1.0355 acc=0.6059 | val_acc=0.5491 val_mAP=0.5979 | lr=0.004375
+Epoch 024 | loss=1.0234 acc=0.6274 | val_acc=0.5570 val_mAP=0.6119 | lr=0.004322
+  -> 保存最佳模型 (val_mAP=0.6119)
+Epoch 025 | loss=0.9909 acc=0.6212 | val_acc=0.5942 val_mAP=0.5882 | lr=0.004268
+Epoch 026 | loss=0.9903 acc=0.6325 | val_acc=0.5782 val_mAP=0.6126 | lr=0.004211
+  -> 保存最佳模型 (val_mAP=0.6126)
+Epoch 027 | loss=0.9566 acc=0.6370 | val_acc=0.6472 val_mAP=0.6409 | lr=0.004153
+  -> 保存最佳模型 (val_mAP=0.6409)
+Epoch 028 | loss=0.9547 acc=0.6608 | val_acc=0.6048 val_mAP=0.6539 | lr=0.004094
+  -> 保存最佳模型 (val_mAP=0.6539)
+Epoch 029 | loss=0.9513 acc=0.6512 | val_acc=0.6764 val_mAP=0.6647 | lr=0.004032
+  -> 保存最佳模型 (val_mAP=0.6647)
+Epoch 030 | loss=0.9208 acc=0.6484 | val_acc=0.6101 val_mAP=0.6235 | lr=0.003969
+Epoch 031 | loss=0.9359 acc=0.6586 | val_acc=0.6499 val_mAP=0.6429 | lr=0.003905
+Epoch 032 | loss=0.9440 acc=0.6552 | val_acc=0.6578 val_mAP=0.6586 | lr=0.003840
+Epoch 033 | loss=0.8616 acc=0.6829 | val_acc=0.6340 val_mAP=0.6924 | lr=0.003773
+  -> 保存最佳模型 (val_mAP=0.6924)
+Epoch 034 | loss=0.9266 acc=0.6529 | val_acc=0.6393 val_mAP=0.6949 | lr=0.003704
+  -> 保存最佳模型 (val_mAP=0.6949)
+Epoch 035 | loss=0.8698 acc=0.6767 | val_acc=0.6127 val_mAP=0.6510 | lr=0.003635
+Epoch 036 | loss=0.9010 acc=0.6580 | val_acc=0.6472 val_mAP=0.7141 | lr=0.003564
+  -> 保存最佳模型 (val_mAP=0.7141)
+Epoch 037 | loss=0.8685 acc=0.6738 | val_acc=0.6525 val_mAP=0.6822 | lr=0.003493
+Epoch 038 | loss=0.8416 acc=0.6903 | val_acc=0.6737 val_mAP=0.7085 | lr=0.003420
+Epoch 039 | loss=0.8184 acc=0.6982 | val_acc=0.6870 val_mAP=0.6832 | lr=0.003347
+Epoch 040 | loss=0.8242 acc=0.6948 | val_acc=0.6525 val_mAP=0.6323 | lr=0.003273
+Epoch 041 | loss=0.8038 acc=0.7174 | val_acc=0.7029 val_mAP=0.6722 | lr=0.003197
+Epoch 042 | loss=0.7709 acc=0.7186 | val_acc=0.6711 val_mAP=0.7118 | lr=0.003122
+Epoch 043 | loss=0.7885 acc=0.7118 | val_acc=0.6260 val_mAP=0.6524 | lr=0.003045
+Epoch 044 | loss=0.7923 acc=0.7135 | val_acc=0.7215 val_mAP=0.6908 | lr=0.002968
+Epoch 045 | loss=0.7648 acc=0.7112 | val_acc=0.6684 val_mAP=0.7151 | lr=0.002891
+  -> 保存最佳模型 (val_mAP=0.7151)
+Epoch 046 | loss=0.7666 acc=0.7271 | val_acc=0.6393 val_mAP=0.7005 | lr=0.002813
+Epoch 047 | loss=0.7812 acc=0.7174 | val_acc=0.6658 val_mAP=0.7159 | lr=0.002735
+  -> 保存最佳模型 (val_mAP=0.7159)
+Epoch 048 | loss=0.7396 acc=0.7367 | val_acc=0.7162 val_mAP=0.7001 | lr=0.002657
+Epoch 049 | loss=0.7396 acc=0.7259 | val_acc=0.7215 val_mAP=0.7321 | lr=0.002579
+  -> 保存最佳模型 (val_mAP=0.7321)
+Epoch 050 | loss=0.7624 acc=0.7339 | val_acc=0.7162 val_mAP=0.7340 | lr=0.002500
+  -> 保存最佳模型 (val_mAP=0.7340)
+Epoch 051 | loss=0.7190 acc=0.7305 | val_acc=0.7003 val_mAP=0.7077 | lr=0.002421
+Epoch 052 | loss=0.7267 acc=0.7384 | val_acc=0.6976 val_mAP=0.7167 | lr=0.002343
+Epoch 053 | loss=0.7429 acc=0.7350 | val_acc=0.7003 val_mAP=0.7205 | lr=0.002265
+Epoch 054 | loss=0.7317 acc=0.7378 | val_acc=0.7215 val_mAP=0.7254 | lr=0.002187
+Epoch 055 | loss=0.7257 acc=0.7367 | val_acc=0.7162 val_mAP=0.7251 | lr=0.002109
+Epoch 056 | loss=0.7024 acc=0.7492 | val_acc=0.7294 val_mAP=0.7388 | lr=0.002032
+  -> 保存最佳模型 (val_mAP=0.7388)
+Epoch 057 | loss=0.7175 acc=0.7373 | val_acc=0.7772 val_mAP=0.7408 | lr=0.001955
+  -> 保存最佳模型 (val_mAP=0.7408)
+Epoch 058 | loss=0.6692 acc=0.7497 | val_acc=0.7109 val_mAP=0.7212 | lr=0.001878
+Epoch 059 | loss=0.6930 acc=0.7458 | val_acc=0.7215 val_mAP=0.7181 | lr=0.001803
+Epoch 060 | loss=0.6900 acc=0.7463 | val_acc=0.7188 val_mAP=0.7446 | lr=0.001727
+  -> 保存最佳模型 (val_mAP=0.7446)
+Epoch 061 | loss=0.6558 acc=0.7616 | val_acc=0.7241 val_mAP=0.7464 | lr=0.001653
+  -> 保存最佳模型 (val_mAP=0.7464)
+Epoch 062 | loss=0.6787 acc=0.7441 | val_acc=0.7056 val_mAP=0.7110 | lr=0.001580
+Epoch 063 | loss=0.6824 acc=0.7514 | val_acc=0.7321 val_mAP=0.7288 | lr=0.001507
+Epoch 064 | loss=0.6424 acc=0.7622 | val_acc=0.6923 val_mAP=0.7355 | lr=0.001436
+Epoch 065 | loss=0.6523 acc=0.7616 | val_acc=0.7586 val_mAP=0.7396 | lr=0.001365
+Epoch 066 | loss=0.6537 acc=0.7678 | val_acc=0.7772 val_mAP=0.7451 | lr=0.001296
+Epoch 067 | loss=0.6354 acc=0.7605 | val_acc=0.7427 val_mAP=0.7470 | lr=0.001227
+  -> 保存最佳模型 (val_mAP=0.7470)
+Epoch 068 | loss=0.6421 acc=0.7741 | val_acc=0.7719 val_mAP=0.7344 | lr=0.001160
+Epoch 069 | loss=0.6440 acc=0.7712 | val_acc=0.7639 val_mAP=0.7396 | lr=0.001095
+Epoch 070 | loss=0.6293 acc=0.7775 | val_acc=0.7745 val_mAP=0.7450 | lr=0.001031
+Epoch 071 | loss=0.6301 acc=0.7814 | val_acc=0.7347 val_mAP=0.7327 | lr=0.000968
+Epoch 072 | loss=0.6477 acc=0.7684 | val_acc=0.7374 val_mAP=0.7443 | lr=0.000906
+Epoch 073 | loss=0.6380 acc=0.7803 | val_acc=0.7560 val_mAP=0.7553 | lr=0.000847
+  -> 保存最佳模型 (val_mAP=0.7553)
+Epoch 074 | loss=0.6048 acc=0.7831 | val_acc=0.7507 val_mAP=0.7438 | lr=0.000789
+Epoch 075 | loss=0.6239 acc=0.7809 | val_acc=0.7347 val_mAP=0.7499 | lr=0.000732
+Epoch 076 | loss=0.6058 acc=0.7843 | val_acc=0.7639 val_mAP=0.7471 | lr=0.000678
+Epoch 077 | loss=0.6057 acc=0.7978 | val_acc=0.7692 val_mAP=0.7408 | lr=0.000625
+Epoch 078 | loss=0.5986 acc=0.7809 | val_acc=0.7454 val_mAP=0.7415 | lr=0.000574
+Epoch 079 | loss=0.5890 acc=0.7928 | val_acc=0.7825 val_mAP=0.7431 | lr=0.000525
+Epoch 080 | loss=0.5960 acc=0.7888 | val_acc=0.7586 val_mAP=0.7447 | lr=0.000477
+Epoch 081 | loss=0.5998 acc=0.7843 | val_acc=0.7666 val_mAP=0.7454 | lr=0.000432
+Epoch 082 | loss=0.6197 acc=0.7860 | val_acc=0.7692 val_mAP=0.7493 | lr=0.000389
+Epoch 083 | loss=0.5676 acc=0.7888 | val_acc=0.7692 val_mAP=0.7469 | lr=0.000348
+Epoch 084 | loss=0.5944 acc=0.7933 | val_acc=0.7666 val_mAP=0.7490 | lr=0.000309
+Epoch 085 | loss=0.5832 acc=0.7950 | val_acc=0.7745 val_mAP=0.7536 | lr=0.000272
+Epoch 086 | loss=0.5663 acc=0.8001 | val_acc=0.7533 val_mAP=0.7494 | lr=0.000238
+Epoch 087 | loss=0.5796 acc=0.8046 | val_acc=0.7613 val_mAP=0.7505 | lr=0.000206
+Epoch 088 | loss=0.5551 acc=0.8109 | val_acc=0.7639 val_mAP=0.7531 | lr=0.000176
+Epoch 089 | loss=0.5653 acc=0.8103 | val_acc=0.7613 val_mAP=0.7489 | lr=0.000148
+Epoch 090 | loss=0.5736 acc=0.7978 | val_acc=0.7692 val_mAP=0.7387 | lr=0.000122
+Epoch 091 | loss=0.5882 acc=0.7894 | val_acc=0.7454 val_mAP=0.7526 | lr=0.000099
+Epoch 092 | loss=0.5761 acc=0.7860 | val_acc=0.7639 val_mAP=0.7503 | lr=0.000079
+Epoch 093 | loss=0.5748 acc=0.7956 | val_acc=0.7480 val_mAP=0.7512 | lr=0.000060
+Epoch 094 | loss=0.5741 acc=0.8001 | val_acc=0.7666 val_mAP=0.7413 | lr=0.000044
+Epoch 095 | loss=0.5855 acc=0.7995 | val_acc=0.7666 val_mAP=0.7520 | lr=0.000031
+Epoch 096 | loss=0.5744 acc=0.8046 | val_acc=0.7719 val_mAP=0.7513 | lr=0.000020
+Epoch 097 | loss=0.5617 acc=0.8052 | val_acc=0.7639 val_mAP=0.7528 | lr=0.000011
+Epoch 098 | loss=0.5621 acc=0.8024 | val_acc=0.7666 val_mAP=0.7439 | lr=0.000005
+Epoch 099 | loss=0.5637 acc=0.8001 | val_acc=0.7692 val_mAP=0.7402 | lr=0.000001
+Epoch 100 | loss=0.5641 acc=0.7967 | val_acc=0.7507 val_mAP=0.7477 | lr=0.000000
+======================================================================
+训练完成! 总耗时: 45.6 分钟
+最佳 epoch: 73, 最佳 val_mAP: 0.7553
+已加载最佳模型: outputs_escnn/best_so2_v3.pth
+======================================================================
+[Test] 正在验证测试集...
+[Test] top1_acc=0.6641 mAP=0.6681
+各类别 AP:
+  cardboard: 0.8002
+  glass: 0.7163
+  metal: 0.5182
+  paper: 0.8264
+  plastic: 0.7356
+  trash: 0.4122
+混淆矩阵已保存到: outputs_escnn/confusion_matrix_trashnet.png
