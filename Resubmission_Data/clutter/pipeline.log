@@ -1,0 +1,211 @@
+2026-09-29 11:05:58 step 1/5: downloading Places365 backgrounds
+Traceback (most recent call last):
+  File "/home/hufei/miniconda3/envs/ultralytics_yolo/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/hufei/miniconda3/envs/ultralytics_yolo/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/hufei/projects/r1_revision/clutter/fetch_bg.py", line 55, in <module>
+    main()
+  File "/home/hufei/projects/r1_revision/clutter/fetch_bg.py", line 34, in main
+    tree = json.loads(get(f"{EP}/api/datasets/{REPO}/tree/main/images/{urllib.parse.quote(cat)}"))
+  File "/home/hufei/projects/r1_revision/clutter/fetch_bg.py", line 24, in get
+    raise err
+  File "/home/hufei/projects/r1_revision/clutter/fetch_bg.py", line 20, in get
+    with urllib.request.urlopen(url, timeout=60) as r:
+  File "/home/hufei/miniconda3/envs/ultralytics_yolo/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/home/hufei/miniconda3/envs/ultralytics_yolo/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/home/hufei/miniconda3/envs/ultralytics_yolo/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/home/hufei/miniconda3/envs/ultralytics_yolo/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/home/hufei/miniconda3/envs/ultralytics_yolo/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/home/hufei/miniconda3/envs/ultralytics_yolo/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+2026-09-29 11:06:02 FAILED at step: fetch_bg (see clutter_work/pipeline.log)
+2026-09-29 11:07:10 step 1/5: downloading Places365 backgrounds
+kitchen: 100 images
+pantry: 100 images
+dining_room: 100 images
+street: 100 images
+alley: 100 images
+parking_lot: 100 images
+office: 100 images
+conference_room: 100 images
+classroom: 100 images
+garage-indoor: 100 images
+storage_room: 100 images
+Traceback (most recent call last):
+  File "/home/hufei/miniconda3/envs/ultralytics_yolo/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/hufei/miniconda3/envs/ultralytics_yolo/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/hufei/projects/r1_revision/clutter/fetch_bg.py", line 61, in <module>
+    main()
+  File "/home/hufei/projects/r1_revision/clutter/fetch_bg.py", line 40, in main
+    tree = json.loads(get(f"{EP}/api/datasets/{REPO}/tree/main/images/{urllib.parse.quote(cat)}"))
+  File "/home/hufei/projects/r1_revision/clutter/fetch_bg.py", line 30, in get
+    raise err
+  File "/home/hufei/projects/r1_revision/clutter/fetch_bg.py", line 21, in get
+    with urllib.request.urlopen(req, timeout=60) as r:
+  File "/home/hufei/miniconda3/envs/ultralytics_yolo/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/home/hufei/miniconda3/envs/ultralytics_yolo/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/home/hufei/miniconda3/envs/ultralytics_yolo/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/home/hufei/miniconda3/envs/ultralytics_yolo/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/home/hufei/miniconda3/envs/ultralytics_yolo/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/home/hufei/miniconda3/envs/ultralytics_yolo/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+2026-09-29 11:13:25 FAILED at step: fetch_bg (see clutter_work/pipeline.log)
+2026-09-29 11:14:22 step 1/5: downloading Places365 backgrounds
+kitchen: 100 images
+pantry: 100 images
+dining_room: 100 images
+street: 100 images
+alley: 100 images
+parking_lot: 100 images
+office: 100 images
+conference_room: 100 images
+classroom: 100 images
+garage-indoor: 100 images
+storage_room: 100 images
+basement: 100 images
+beach: 100 images
+park: 100 images
+lawn: 100 images
+living_room: 100 images
+bedroom: 100 images
+bathroom: 100 images
+2026-09-29 11:17:01 step 2/5: DINO+SAM masks for all TrashNet images (2 GPUs)
+2026-09-29 11:29:38 step 3/5: compositing plain/rand/corr/conf
+1/2527 cardboard/cardboard1.jpg fg=0.49 full=False
+201/2527 cardboard/cardboard28.jpg fg=0.54 full=False
+401/2527 cardboard/cardboard97.jpg fg=0.93 full=True
+601/2527 glass/glass277.jpg fg=0.30 full=False
+801/2527 glass/glass457.jpg fg=0.35 full=False
+1001/2527 metal/metal186.jpg fg=0.39 full=False
+1201/2527 metal/metal366.jpg fg=0.49 full=False
+1401/2527 paper/paper177.jpg fg=0.34 full=False
+1601/2527 paper/paper357.jpg fg=0.42 full=False
+1801/2527 paper/paper537.jpg fg=0.69 full=False
+2001/2527 plastic/plastic182.jpg fg=0.04 full=False
+2201/2527 plastic/plastic362.jpg fg=0.22 full=False
+2401/2527 trash/trash108.jpg fg=0.40 full=False
+done: 2527 images, fullframe fallback 140 (5.5%), corr agreement 0.799
+2026-09-29 11:30:40 step 4/5: smoke test (R18 + D4 + C8, 1 epoch)
+[clutter_corr_R18_trashnet_s42] params=11.18M train/val=1766/377 classes=['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
+[clutter_corr_R18_trashnet_s42] ep 001 loss=1.7482 tr_acc=0.3438 val_acc=0.2361
+[clutter_corr_R18_trashnet_s42] DONE tn_corr=0.234 tn_plain=0.237 tn_conf=0.237 | RW x_all acc=0.162 mAP=0.264 | AC gain rw=+0.039 | 0.0 min
+| D4ResNet-18 with D4 equivariance
+| Group order: 8
+| Total parameters: 12,015,692 (12.02M)
+[clutter_corr_D4_trashnet_s42] params=12.02M train/val=1766/377 classes=['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
+[clutter_corr_D4_trashnet_s42] ep 001 loss=1.7689 tr_acc=0.2708 val_acc=0.1936
+[clutter_corr_D4_trashnet_s42] DONE tn_corr=0.193 tn_plain=0.195 tn_conf=0.188 | RW x_all acc=0.298 mAP=0.241 | AC gain rw=-0.059 | 0.1 min
+构建等变网络: C8 (45° 旋转对称)
+  gspace: C8_on_R2[(None, 8)]
+  base_channels: 16
+[clutter_corr_C8_trashnet_s42] params=3.75M train/val=1766/377 classes=['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
+[clutter_corr_C8_trashnet_s42] ep 001 loss=1.8594 tr_acc=0.2917 val_acc=0.2361
+[clutter_corr_C8_trashnet_s42] DONE tn_corr=0.234 tn_plain=0.234 tn_conf=0.234 | RW x_all acc=0.162 mAP=0.265 | AC gain rw=-0.179 | 0.0 min
+2026-09-29 11:32:52 step 5/5: training queue started
+45 runs to do
+11:32:52 START gpu0 clutter_plain_D4_trashnet_s42
+11:32:52 START gpu0 clutter_rand_D4_trashnet_s42
+11:32:52 START gpu0 clutter_corr_D4_trashnet_s42
+11:32:52 START gpu0 clutter_plain_D4_trashnet_s123
+11:32:52 START gpu1 clutter_rand_D4_trashnet_s123
+11:32:52 START gpu1 clutter_corr_D4_trashnet_s123
+11:32:52 START gpu1 clutter_plain_D4_trashnet_s2024
+11:32:52 START gpu1 clutter_rand_D4_trashnet_s2024
+12:11:21 DONE clutter_plain_D4_trashnet_s42 (38.5 min) done=1 failed=0 queued=37
+12:11:21 DONE clutter_plain_D4_trashnet_s123 (38.5 min) done=2 failed=0 queued=37
+12:11:21 START gpu0 clutter_corr_D4_trashnet_s2024
+12:11:21 START gpu0 clutter_plain_D4_trashnet_s7
+12:11:52 DONE clutter_rand_D4_trashnet_s42 (39.0 min) done=3 failed=0 queued=35
+12:11:52 DONE clutter_corr_D4_trashnet_s42 (39.0 min) done=4 failed=0 queued=35
+12:11:52 START gpu0 clutter_rand_D4_trashnet_s7
+12:11:52 START gpu0 clutter_corr_D4_trashnet_s7
+12:13:54 DONE clutter_rand_D4_trashnet_s123 (41.0 min) done=5 failed=0 queued=33
+12:13:54 DONE clutter_corr_D4_trashnet_s123 (41.0 min) done=6 failed=0 queued=33
+12:13:54 DONE clutter_plain_D4_trashnet_s2024 (41.0 min) done=7 failed=0 queued=33
+12:13:54 DONE clutter_rand_D4_trashnet_s2024 (41.0 min) done=8 failed=0 queued=33
+12:13:54 START gpu1 clutter_plain_D4_trashnet_s3407
+12:13:54 START gpu1 clutter_rand_D4_trashnet_s3407
+12:13:54 START gpu1 clutter_corr_D4_trashnet_s3407
+12:13:54 START gpu1 clutter_plain_R18_trashnet_s42
+12:18:10 DONE clutter_plain_R18_trashnet_s42 (4.3 min) done=9 failed=0 queued=29
+12:18:10 START gpu1 clutter_rand_R18_trashnet_s42
+12:22:55 DONE clutter_rand_R18_trashnet_s42 (4.8 min) done=10 failed=0 queued=28
+12:22:55 START gpu1 clutter_corr_R18_trashnet_s42
+12:27:40 DONE clutter_corr_R18_trashnet_s42 (4.8 min) done=11 failed=0 queued=27
+12:27:40 START gpu1 clutter_plain_R18_trashnet_s123
+12:31:56 DONE clutter_plain_R18_trashnet_s123 (4.3 min) done=12 failed=0 queued=26
+12:31:56 START gpu1 clutter_rand_R18_trashnet_s123
+12:36:41 DONE clutter_rand_R18_trashnet_s123 (4.8 min) done=13 failed=0 queued=25
+12:36:41 START gpu1 clutter_corr_R18_trashnet_s123
+12:41:26 DONE clutter_corr_R18_trashnet_s123 (4.8 min) done=14 failed=0 queued=24
+12:41:26 START gpu1 clutter_plain_R18_trashnet_s2024
+12:44:42 DONE clutter_plain_D4_trashnet_s7 (33.3 min) done=15 failed=0 queued=23
+12:44:42 START gpu0 clutter_rand_R18_trashnet_s2024
+12:46:42 DONE clutter_plain_R18_trashnet_s2024 (5.3 min) done=16 failed=0 queued=22
+12:46:42 START gpu1 clutter_corr_R18_trashnet_s2024
+12:49:12 DONE clutter_corr_D4_trashnet_s2024 (37.9 min) done=17 failed=0 queued=21
+12:49:12 DONE clutter_rand_D4_trashnet_s7 (37.3 min) done=18 failed=0 queued=21
+12:49:12 DONE clutter_corr_D4_trashnet_s7 (37.3 min) done=19 failed=0 queued=21
+12:49:12 START gpu0 clutter_plain_R18_trashnet_s7
+12:49:12 START gpu0 clutter_rand_R18_trashnet_s7
+12:49:12 START gpu0 clutter_corr_R18_trashnet_s7
+12:54:13 DONE clutter_rand_R18_trashnet_s2024 (9.5 min) done=20 failed=0 queued=18
+12:54:13 START gpu0 clutter_plain_R18_trashnet_s3407
+12:55:43 DONE clutter_plain_D4_trashnet_s3407 (41.8 min) done=21 failed=0 queued=17
+12:55:43 START gpu1 clutter_rand_R18_trashnet_s3407
+12:55:58 DONE clutter_rand_D4_trashnet_s3407 (42.1 min) done=22 failed=0 queued=16
+12:55:58 DONE clutter_corr_D4_trashnet_s3407 (42.1 min) done=23 failed=0 queued=16
+12:55:58 START gpu1 clutter_corr_R18_trashnet_s3407
+12:55:58 START gpu1 clutter_plain_C8_trashnet_s42
+12:56:28 DONE clutter_corr_R18_trashnet_s2024 (9.8 min) done=24 failed=0 queued=14
+12:56:28 START gpu1 clutter_rand_C8_trashnet_s42
+12:57:58 DONE clutter_plain_R18_trashnet_s7 (8.8 min) done=25 failed=0 queued=13
+12:57:58 START gpu0 clutter_corr_C8_trashnet_s42
+12:58:43 DONE clutter_rand_R18_trashnet_s7 (9.5 min) done=26 failed=0 queued=12
+12:58:43 DONE clutter_corr_R18_trashnet_s7 (9.5 min) done=27 failed=0 queued=12
+12:58:43 START gpu0 clutter_plain_C8_trashnet_s123
+12:58:43 START gpu0 clutter_rand_C8_trashnet_s123
+13:01:14 DONE clutter_plain_R18_trashnet_s3407 (7.0 min) done=28 failed=0 queued=10
+13:01:14 START gpu0 clutter_corr_C8_trashnet_s123
+13:02:29 DONE clutter_rand_R18_trashnet_s3407 (6.8 min) done=29 failed=0 queued=9
+13:02:29 START gpu1 clutter_plain_C8_trashnet_s2024
+13:02:44 DONE clutter_corr_R18_trashnet_s3407 (6.8 min) done=30 failed=0 queued=8
+13:02:44 START gpu1 clutter_rand_C8_trashnet_s2024
+13:17:45 DONE clutter_corr_C8_trashnet_s42 (19.8 min) done=31 failed=0 queued=7
+13:17:45 START gpu0 clutter_corr_C8_trashnet_s2024
+13:21:15 DONE clutter_plain_C8_trashnet_s42 (25.3 min) done=32 failed=0 queued=6
+13:21:15 START gpu1 clutter_plain_C8_trashnet_s7
+13:23:45 DONE clutter_plain_C8_trashnet_s123 (25.0 min) done=33 failed=0 queued=5
+13:23:45 START gpu0 clutter_rand_C8_trashnet_s7
+13:24:16 DONE clutter_rand_C8_trashnet_s123 (25.5 min) done=34 failed=0 queued=4
+13:24:16 START gpu0 clutter_corr_C8_trashnet_s7
+13:24:46 DONE clutter_rand_C8_trashnet_s42 (28.3 min) done=35 failed=0 queued=3
+13:24:46 START gpu1 clutter_plain_C8_trashnet_s3407
+13:25:46 DONE clutter_corr_C8_trashnet_s123 (24.5 min) done=36 failed=0 queued=2
+13:25:46 START gpu0 clutter_rand_C8_trashnet_s3407
+13:27:01 DONE clutter_plain_C8_trashnet_s2024 (24.5 min) done=37 failed=0 queued=1
+13:27:01 DONE clutter_rand_C8_trashnet_s2024 (24.3 min) done=38 failed=0 queued=1
+13:27:01 START gpu1 clutter_corr_C8_trashnet_s3407
+13:38:02 DONE clutter_corr_C8_trashnet_s2024 (20.3 min) done=39 failed=0 queued=0
+13:39:17 DONE clutter_plain_C8_trashnet_s7 (18.0 min) done=40 failed=0 queued=0
+13:41:32 DONE clutter_plain_C8_trashnet_s3407 (16.8 min) done=41 failed=0 queued=0
+13:42:17 DONE clutter_corr_C8_trashnet_s3407 (15.3 min) done=42 failed=0 queued=0
+13:42:47 DONE clutter_rand_C8_trashnet_s7 (19.0 min) done=43 failed=0 queued=0
+13:43:02 DONE clutter_corr_C8_trashnet_s7 (18.8 min) done=44 failed=0 queued=0
+13:43:17 DONE clutter_rand_C8_trashnet_s3407 (17.5 min) done=45 failed=0 queued=0
+ALL FINISHED. failed: []

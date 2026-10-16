@@ -1,0 +1,116 @@
+== places365
+Andron00e/Places365-custom 2030
+Andron00e/Places365-custom-train 557
+haideraltahan/wds_places365 122
+ljnlonoljpiljm/places365-256px 1178
+galilai-group/places365-small 26
+torch-uncertainty/Places365-C 2
+dpdl-benchmark/Places365-Validation 386
+dpdl-benchmark/places365-mini-class-easy 19
+dpdl-benchmark/places365-mini-class-hard 38
+dpdl-benchmark/places365-mini-sample-easy 19
+torch-uncertainty/Places365 177
+Chen-Zhencheng/CVD-Places365 5
+dimzhead/places365-10largest-256 23
+rumenguin/places365-val 307
+MichaelYu781/places365_val 5
+== places
+foursquare/fsq-os-places 55648
+JapanDegitalMaterial/Places_in_Japan 87
+DebasishDhal99/exonyms-for-lithuanian-places 8
+xshubhamx/places-5 9
+Nexusflow/PlacesAPIBenchmark 33
+visheratin/google_landmarks_places 258
+Andron00e/Places365-custom 2030
+Andron00e/Places365-custom-train 557
+cboard-org/places_dataset 2
+haideraltahan/wds_places365 122
+danielpappa/phillys-top-food-places 7
+truongvu2000nd/LAION-vi-places 18
+NiVa768/placesinindia.csv 1
+zer0int/unusual-objects-unusual-places_text-image 38
+willcb/historic-places 18
+== dtd
+HuggingFaceM4/DTD_Describable-Textures-Dataset 135
+djghosh/wds_vtab-dtd_test 45
+Multimodal-Fatima/DTD_parition1_train 174
+Multimodal-Fatima/DTD_parition1_test 229
+Multimodal-Fatima/DTD_parition1_test_embeddings 14
+Multimodal-Fatima/DTD_parition1_train_embeddings 11
+clip-benchmark/wds_vtab-dtd 1048
+Multimodal-Fatima/DTD_parition1_test_facebook_opt_350m_Attributes_ns_1880 34
+Multimodal-Fatima/DTD_parition1_test_facebook_opt_1.3b_Attributes_ns_1880 21
+Multimodal-Fatima/DTD_parition1_test_facebook_opt_2.7b_Attributes_ns_1880 28
+Multimodal-Fatima/DTD_parition1_test_facebook_opt_350m_Attributes_Caption_ns_1880 32
+Multimodal-Fatima/DTD_parition1_test_facebook_opt_1.3b_Attributes_Caption_ns_1880 19
+Multimodal-Fatima/DTD_parition1_test_facebook_opt_2.7b_Attributes_Caption_ns_1880 29
+Multimodal-Fatima/DTD_parition1_test_facebook_opt_350m_Visclues_ns_1880 21
+Multimodal-Fatima/DTD_parition1_test_facebook_opt_1.3b_Visclues_ns_1880 19
+== indoor
+sebnae/IndoorCrowd 192
+Maksonchek/indoor-smartphone-3d-reconstruction-control 105
+vincentclaes/mit_indoor_scenes 32
+Brosnan/WIFI_RSSI_Indoor_Positioning_Dataset 89
+keremberke/indoor-scene-classification 318
+qlairvoyance/indoor_radar 16
+AD999/indoor 7
+deansmile/NYC-Indoor-VPR 4
+deansmile123/NYC-Indoor-VPR 10
+sonup/table_indoor-object 19
+quindenebola/indoor 19
+xyfang/indoor_rooms 15
+Voxel51/IndoorSceneRecognition 9107
+svjack/genshin_impact_landscape_indoor_image 7
+svjack/genshin_impact_landscape_indoor_image_230 6
+/home/hufei/projects/r1_revision:
+R1_实验说明.md
+Trashnetmodel_test_realwaste.py
+__pycache__
+cam
+cam_work
+capacity.log
+d4_resnet18.py
+dataset.py
+escnn_train_v2.py
+escnn_v5_so2.py
+launcher.log
+r1exp
+results
+runlogs
+setup_r1.sh
+smoke.log
+smoke.sh
+smoke_SO2.log
+so2.log
+so2_v3_local.py
+start_r1.sh
+status.txt
+step1.sh
+step2.sh
+sync_results.sh
+train.py
+train_d4_resnet18.py
+
+/home/hufei/projects/r1_revision/cam_work:
+auto_manual30
+auto_sample
+cams
+gc_a.log
+gc_b.log
+gc_m.log
+gc_manual30.csv
+gc_sample_a.csv
+gc_sample_b.csv
+iou_manual30.csv
+qc_manual30
+qc_sample
+sample_images
+sample_list.csv
+step1.log
+step2.done
+step2_main.log
+step2_mask.log
+index, name, memory.used [MiB], utilization.gpu [%]
+0, NVIDIA GeForce RTX 5090, 1754 MiB, 5 %
+1, NVIDIA GeForce RTX 5090, 0 MiB, 0 %
+/dev/sdd       1007G  119G  838G  13% /
